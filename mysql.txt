@@ -1,0 +1,5 @@
+用户数据表usertables：
+name    password    uid    concern
+想法数据表ideatables：
+ideatitle    ideacontent    ideaaddress    ideacontact    ideahot    ideauid    ideastate    ideamaster
+
