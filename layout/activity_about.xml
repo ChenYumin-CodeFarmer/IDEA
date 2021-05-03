@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#abd9e0"
+    tools:context=".AboutActivity">
+
+    <TextView
+        android:id="@+id/auther_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="开发者: 重庆邮电大学——陈玉敏"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/qq_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/auther_text"
+        android:gravity="center"
+        android:text="联系方式（QQ）：2318033558"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/qq_text"
+        android:gravity="center"
+        android:text="开发时间：2021年"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#abd9e0"
+    tools:context=".SendActivity">
+
+    <TextView
+        android:id="@+id/sort_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="分享你的Idea吧！"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:gravity="center"
+        />
+
+    <RelativeLayout
+        android:id="@+id/send_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sort_title">
+
+        <TextView
+            android:id="@+id/idea_title"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Idea名称："
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="right|center_vertical"
+            android:layout_marginTop="25dp" />
+
+        <EditText
+            android:id="@+id/title_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/idea_title"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignBottom="@id/idea_title"
+            />
+
+        <TextView
+            android:id="@+id/idea_content"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/idea_title"
+            android:text="Idea介绍："
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="right|top" />
+
+        <EditText
+            android:id="@+id/content_edit"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_toRightOf="@+id/idea_content"
+            android:layout_alignTop="@id/idea_content"
+            android:hint="请用一段话描述你的Idea"
+            android:maxHeight="250dp"
+            android:layout_below="@+id/title_edit"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit_bg"
+            android:gravity="top"/>
+
+        <TextView
+            android:id="@+id/idea_address"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/content_edit"
+            android:text="Github地址："
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="right|bottom"/>
+
+        <EditText
+            android:id="@+id/git_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/content_edit"
+            android:layout_toRightOf="@+id/idea_address"
+            android:layout_marginRight="10dp"
+            android:hint="如果没有就不填"
+            />
+
+        <TextView
+            android:id="@+id/idea_master"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/idea_address"
+            android:text="联系方式："
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="right|bottom" />
+
+        <EditText
+            android:id="@+id/call_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/git_edit"
+            android:layout_toRightOf="@+id/idea_master"
+            android:layout_marginRight="10dp"
+            android:hint="QQ、Email、WeChat..."
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/share_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/send_layout"
+        android:layout_centerInParent="true"
+        android:text="分享"
+        android:textColor="@color/white"
+        android:backgroundTint="#a9c7db"/>
+
+</RelativeLayout>

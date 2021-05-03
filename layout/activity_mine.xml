@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#abd9e0"
+    android:id="@+id/swipe_fresh">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/mine_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="我分享的Idea"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:gravity="center"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_mine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mine_title"
+        />
+    </RelativeLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
